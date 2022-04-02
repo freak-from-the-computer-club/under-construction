@@ -77,6 +77,17 @@ body {
   padding: 25px 0 20px 0;
 }
 
+.footer-top-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1rem;
+}
+
+.footer-top-items span {
+  margin: 10px 0 0 0;
+}
+
 .footer-info {
   display: flex;
   align-items: center;
@@ -120,4 +131,15 @@ body {
 
 .spacing {
   letter-spacing: 1px;
+}
+
+.pgp {
+  font-size: 16px;
+  cursor: pointer;
+  letter-spacing: -2px;
+}
+
+.pgp:hover {
+  background-color: var(--retro-cyan);
+  transition: 0.5s ease-in-out;
 }
