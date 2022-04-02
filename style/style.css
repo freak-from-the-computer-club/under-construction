@@ -1,16 +1,29 @@
 :root {
-  --dark: #1e1f29;
-  --pink: #ff99cc;
-  --purple: #b171d0;
-  --cyan: #99ccff;
-  --deep-blue: #0a0049;
+  --cosmos-dark: #161925;
+  --cosmos-deep-blue: #0a0049;
+  --cosmos-dark-gray: #323353;
+  --cosmos-gray: #4e4d80;
+  --cosmos-violet: #9a77fc;
+  --cosmos-blue: #7da6ff;
+  --cosmos-green: #32c2b6;
+  --cosmos-coral: #f7768e;
+  --cosmos-yellow: #ffdd00;
+  --retro-pink: #ff99cc;
+  --retro-powder: #d56eac;
+  --retro-magenta-pink: #d95aa1;
+  --retro-purple: #b171d0;
+  --retro-blue: #8888ff;
+  --retro-cyan: #99ccff;
+  --retro-acid-cyan: #99ffff;
+  --retro-teal: #99ffcc;
+  --retro-green: #81d8d0;
 }
 
 body {
-  background-color: var(--pink);
+  background-color: var(--retro-pink);
   font-family: 'FreeMono Regular';
   font-size: 14px;
-  color: var(--dark);
+  color: var(--cosmos-dark-gray);
 }
 
 .wrapper {
@@ -50,7 +63,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 25px 0 20px 0;
-  color: var(--purple);
+  color: var(--retro-purple);
 }
 
 .footer-top-item {
@@ -86,12 +99,12 @@ body {
 }
 
 .git-link:hover {
-  background-color: var(--cyan);
+  background-color: var(--retro-cyan);
   transition: 0.5s ease-in-out;
 }
 
 .git-link:visited {
-  color: var(--purple);
+  color: var(--retro-purple);
 }
 
 .silk-font {
