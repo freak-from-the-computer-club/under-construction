@@ -1,0 +1,92 @@
+:root {
+  --dark: #1e1f29;
+  --pink: #ff99cc;
+  --purple: #b171d0;
+  --cyan: #99ccff;
+}
+
+body {
+  background-color: var(--pink);
+  font-family: 'FreeMono', sans-serif;
+  font-size: 14px;
+  color: var(--dark);
+}
+
+.wrapper {
+  max-width: 1110px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.current-version {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hello-world {
+  display: grid;
+  text-align: center;
+}
+
+.hello-world img {
+  display: block;
+  margin: auto;
+}
+
+.hello-world p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ascii-alien {
+  display: flex;
+  justify-content: center;
+  margin: 0 245px 0 0;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0 20px 0;
+}
+
+.footer-top-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0 20px 0;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+}
+
+.footer-info span {
+  font-size: 16px;
+  margin: 0 0 0 103px;
+}
+
+.git-logo {
+  display: block;
+  width: 180px;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.git-link {
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.git-link:hover {
+  background-color: var(--cyan);
+  transition: 0.5s ease-in-out;
+}
+
+.git-link:visited {
+  color: var(--purple);
+}
