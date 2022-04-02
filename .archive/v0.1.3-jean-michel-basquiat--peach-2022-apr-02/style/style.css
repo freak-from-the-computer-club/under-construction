@@ -1,0 +1,124 @@
+:root {
+  --cosmos-dark: #161925;
+  --cosmos-deep-blue: #0a0049;
+  --cosmos-dark-gray: #323353;
+  --cosmos-gray: #4e4d80;
+  --cosmos-violet: #9a77fc;
+  --cosmos-blue: #7da6ff;
+  --cosmos-green: #32c2b6;
+  --cosmos-coral: #f7768e;
+  --cosmos-yellow: #ffdd00;
+  --retro-pink: #ff99cc;
+  --retro-powder: #d56eac;
+  --retro-magenta-pink: #d95aa1;
+  --retro-purple: #b171d0;
+  --retro-blue: #8888ff;
+  --retro-cyan: #99ccff;
+  --retro-acid-cyan: #99ffff;
+  --retro-teal: #99ffcc;
+  --retro-green: #81d8d0;
+}
+
+body {
+  background-color: var(--retro-pink);
+  font-family: 'pixelgeorgia', 'FreeMono Regular';
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--cosmos-gray);
+}
+
+.wrapper {
+  max-width: 1110px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.current-version {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--cosmos-violet);
+}
+
+.hello-world {
+  display: grid;
+  text-align: center;
+}
+
+.hello-world img {
+  display: block;
+  margin: auto;
+}
+
+.hello-world p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ascii-alien {
+  display: flex;
+  justify-content: center;
+  margin: 0 245px 0 0;
+  letter-spacing: normal;
+  font-size: 1.3em;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0 20px 0;
+  color: var(--retro-purple);
+  font-size: 11px;
+}
+
+.footer-top-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0 20px 0;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+}
+
+.footer-info span {
+  margin: 0 0 0 150px;
+}
+
+.git-logo {
+  display: block;
+  width: 180px;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.git-link {
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--cosmos-deep-blue);
+}
+
+.git-link:hover {
+  background-color: var(--retro-cyan);
+  transition: 0.5s ease-in-out;
+}
+
+.git-link:visited {
+  color: var(--retro-purple);
+}
+
+.silk-font {
+  font-family: 'silkscreennormal';
+}
+
+.copy {
+  font-size: 18px;
+}
+
+.spacing {
+  letter-spacing: 1px;
+}

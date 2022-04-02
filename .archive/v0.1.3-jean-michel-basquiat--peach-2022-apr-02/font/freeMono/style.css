@@ -1,0 +1,6 @@
+    @font-face {
+    font-family: 'FreeMono Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('FreeMono Regular'), url('FreeMono.woff') format('woff');
+    }
