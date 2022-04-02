@@ -23,7 +23,7 @@ body {
   background-color: var(--retro-pink);
   font-family: 'FreeMono Regular';
   font-size: 14px;
-  color: var(--cosmos-dark-gray);
+  color: var(--cosmos-gray);
 }
 
 .wrapper {
@@ -95,7 +95,7 @@ body {
   text-decoration: none;
   font-size: 16px;
   cursor: pointer;
-  color: var(--deep-blue);
+  color: var(--cosmos-deep-blue);
 }
 
 .git-link:hover {
