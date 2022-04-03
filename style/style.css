@@ -17,6 +17,8 @@
   --retro-acid-cyan: #99ffff;
   --retro-teal: #99ffcc;
   --retro-green: #81d8d0;
+
+  --nord-gray: #D8DEE9;
 }
 
 body {
@@ -27,15 +29,41 @@ body {
   color: var(--cosmos-gray);
 }
 
+/*.block-border {
+  border: 2px solid var(--cosmos-yellow);
+}*/
+
 .wrapper {
-  max-width: 1110px;
-  padding: 0 15px;
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 0 15px;
+}
+
+.link {
+  cursor: pointer;
+  color: var(--retro-purple);
+  border-bottom: 1px dashed var(--retro-purple);
+}
+
+.link:hover {
+  background-color: var(--retro-cyan);
+  transition: 0.5s ease-in-out;
+  border-bottom: none;
+}
+
+.link:visited {
+  color: var(--retro-powder);
+  border-bottom-color: var(--retro-pink);
+}
+
+.link-wrapper {
+  padding: 3px;
 }
 
 .current-version {
   display: flex;
   justify-content: flex-end;
+  margin: 0;
 }
 
 .hello-world {
@@ -60,6 +88,9 @@ body {
   letter-spacing: normal;
   font-size: 1.3em;
 }
+
+
+/* FOOTER */
 
 .footer-top {
   display: flex;
@@ -90,35 +121,22 @@ body {
 
 .footer-info {
   display: flex;
-  align-items: center;
-}
-
-.footer-info span {
-  margin: 0 0 0 150px;
+  flex-direction: column;
+  line-height: 2em;
+  text-align: justify;
 }
 
 .git-logo {
   display: block;
-  width: 180px;
-  height: 180px;
+  width: 80px;
+  height: 105px;
   background-repeat: no-repeat;
   background-position: center center;
+  margin-right: 40px;
 }
 
 .git-link {
-  text-decoration: none;
   font-size: 16px;
-  cursor: pointer;
-  color: var(--cosmos-deep-blue);
-}
-
-.git-link:hover {
-  background-color: var(--retro-cyan);
-  transition: 0.5s ease-in-out;
-}
-
-.git-link:visited {
-  color: var(--retro-purple);
 }
 
 .silk-font {
@@ -139,7 +157,16 @@ body {
   letter-spacing: -2px;
 }
 
-.pgp:hover {
-  background-color: var(--retro-cyan);
-  transition: 0.5s ease-in-out;
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  color: var(--retro-powder);
+  padding: 5px 0;
+  font-size: 9px;
+  border-top: 1px solid var(--retro-powder);
+}
+
+.footer-bottom a {
+  color: var(--retro-powder);
+  font-size: 9px;
 }
