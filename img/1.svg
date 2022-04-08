@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="35">
+<rect fill="#46DCEA" width="15" height="35"/>
+<rect fill="#D317FE" width="15" height="35" x="15"/>
+<rect fill="#45D509" width="15" height="35" x="30"/>
+<rect fill="#23EB97" width="15" height="35" x="45"/>
+<rect fill="#E49564" width="15" height="35" x="60"/>
+<rect fill="#10D4CD" width="15" height="35" x="75"/>
+<text font-size="12" fill="black" font-family="monospace" x="52" y="32">+</text>
+<text font-size="11.5" fill="black" font-family="monospace" x="60.7" y="32">B2</text>
+<text font-size="11.5" fill="black" font-family="monospace" x="75.4" y="32">C2</text>
+</svg>
+
+

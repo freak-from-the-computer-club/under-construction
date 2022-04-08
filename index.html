@@ -15,7 +15,7 @@
 <body>
   <header>
     <div class="wrapper">
-      <p class="current-version">0.1.3-jean-michel-basquiat--peach</p>
+      <p id="current-version" class="current-version"></p>
     </div>
   </header>
   <section>
@@ -61,21 +61,114 @@
   <footer>
   <div class="wrapper">
     <div class="footer-top">
-      <div class="footer-top-item">
+
+      <div class="footer-top__item">
         <img class="git-logo" src="./img/fftcc-terminal.gif" alt="fftcc-logo">
-        <div class="footer-top-items">
-          <a class="git-link silk-font" href="http://notabug.org/fftcc/" target="_blank" rel="noopener noreferrer"><span>notabug.org</span></a>
-        <span>e-mail / XMPP<br>fftcc@disroot.org</span>
-        <span class="pgp silk-font">PGP 0x0992BBCB</span>
+        <div class="footer-top__items">
+          <a class="footer-top__items_space git-link silk-font link link-wrapper" href="http://notabug.org/fftcc/" target="_blank" rel="noopener noreferrer">notabug.org</a>
+          <span class="footer-top__items_space">e-mail / XMPP<br>fftcc@disroot.org</span>
+          <a href="#popup-pgp" class="footer-top__items_space pgp silk-font link link-wrapper popup-link">PGP 0x0992BBCB</a>
         </div>
       </div>
 
-      <div class="footer-info">
+      <div class="footer-copy">
         <span class="silk-font copy">&copy;&nbsp;by fftcc</span>
-        <span class="spacing">Сайт работает с 1 апреля 2022</span>
       </div>
+
+      <div class="footer-info">
+        <a href="#"><span class="spacing link link-wrapper popup-link">О проекте</span></a>
+        <span class="spacing link-wrapper">Сайт работает с 1 апреля 2022</span>
+      </div>
+
     </div>
+
+    <div class="footer-bottom">
+      <a href="#">Политика конфиденциальности</a>
+      <a href="#popup-cc">Лицензия и Авторские права</a>
+      <a href="#popup-cc"><img src="./img/by-sa.svg"></a>
+      <p id="current-version" class="current-version"></p>
+    </div>
+
   </div>
 </footer>
+
+<div id="popup-pgp" class="popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <a href="#" class="popup__close close-popup">X</a>
+      <pre class="popup__text">
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEYYpDchYJKwYBBAHaRw8BAQdAljQcD2kQUTfgoHylLfOMUKaVKrkWbQRowcPM
+sk2/sw+0NWZmdGNjIChmcmVhayBmcm9tIHRoZSBjb21wdXRlciBjbHViKSA8ZWVl
+QGZmOTljYy5hcnQ+iJAEExYKADgWIQTNLAhlFrB7cEA0JCbJRryTCZK7ywUCYghR
+KgIbAQULCQgHAwUVCgkICwUWAgMBAAIeAQIXgAAKCRDJRryTCZK7y0vZAQCJtNDp
+70H2oqAWRL2Qvw0TWkwv4E5fc8X795IiV7FLnwEArDm9OjuofV0VWDR1X3zggU12
+3QmxU9YZci+Mc5OSUAe4MwRhipzXFgkrBgEEAdpHDwEBB0B+hNEsRE5jz7RjN9Ev
+G7TEueRdfNhtHlcvTI0Xq87gVYj1BBgWCgAmAhsCFiEEzSwIZRawe3BANCQmyUa8
+kwmSu8sFAmGOmOMFCQDxSgwAgXYgBBkWCAAdFiEEVrnflA4vTzcF8jRDyEv2FNwa
+LfkFAmGKnNcACgkQyEv2FNwaLfmFzgEArIeYTBGscqwouzLm9dThWEjJfdWqhdHB
+/q7oUOcFNYsBAIJYl6c1fvahR93YD1ETUIsjE+oVfBRQtjEqoPTIoZoBCRDJRryT
+CZK7y1mFAQC79mZCeMoeji37nlsuUt+U5l+mkA4fHLWDuSBuwGcCaQEA6b3/aTn7
+5gdjby8/PfEKN45/MaWcyEUUvSN/cfn7iQG4OARhip05EgorBgEEAZdVAQUBAQdA
+Y0UdcxUNpoP41CgJDoEgqMHrIDDEgce1jrrVyscryR8DAQgHiH4EGBYKACYCGwwW
+IQTNLAhlFrB7cEA0JCbJRryTCZK7ywUCYY6Y4wUJAPFJqgAKCRDJRryTCZK7yykI
+AP9PDt3+kCTb9T8P6pmtiES2Tq2YVsWtdk1QVg0xnRVDQgEAw79kNdQPSSvRXmxL
+6qMkVDLxWKDlr1mD9fI0cfLyKAy4MwRhip2YFgkrBgEEAdpHDwEBB0A/9MCOxfid
+x0Hb6THBiYduAft0CE8t5PBLpHFt+xQJTYh+BBgWCgAmAhsgFiEEzSwIZRawe3BA
+NCQmyUa8kwmSu8sFAmGOmOMFCQDxSUsACgkQyUa8kwmSu8uoewEAovwrFp/1S5mp
+CthEucuK8Er3/RKPbSBOmtzTtJtxzagBAKFz1l8mhHcpl2ZSuoqPLNEc6NUUeY6m
+nYhM0KKWmSEO
+=ZnwH
+-----END PGP PUBLIC KEY BLOCK-----
+      </pre>
+    </div>
+  </div>
+</div>
+
+<!--<div id="popup-cc" class="popup popup__cc">
+  <a href="#" class="popup__area"></a>
+  <div class="popup__body">
+    <div class="popup__content">
+      <a href="#" class="popup__close">X</a>
+      <h1 class="popup__title">Creative Commons Attribution Share Alike 4.0.</h1>
+      <div class="popup__text">
+        <p>
+          Основные требования лицензии:
+        </p>
+        <p>
+          Вы можете копировать и распространять материал на любом носителе и в любом формате, как с помощью портативных носителей, так и в сети интернет;
+        </p>
+        <p>
+          Адаптировать и создавать производные материалы, видоизменять и создавать новое основываясь на этом материале;
+        </p>
+        <p>
+          Автор не вправе аннулировать эти свободы, пока вы выполняете условия лицензии.
+          Обязательно соблюдение следующих условий:
+        </p>
+        <p>
+          Attribution — вы обязаны любим доступным образом сохранить авторство материала. Если это возможно, оставить ссылку на источник материала, где пользователи смогут узнать автора и лицензию. Также необходимо обозначить лицензию, под которой распространяется материал;
+        </p>
+        <p>
+          ShareAlike — если вы изменяете или перерабатываете материал, а также, если берете его за основу нового произведения, его нужно распространять под этой же лицензией. А также вы не можете создавать другим пользователям препятствия в выполнении чего-либо, что разрешено лицензией.
+        </p>
+        <p>
+          Таким образом, если вы хотите скопировать материал себе на сайт, вам будет достаточно указать ссылку на оригинал и лицензию, например:
+        </p>
+        <p>
+          Источник: <a href="https://ff99cc.art" class="link link-wrapper">https://ff99cc.art</a><br> Материал распространяется под лицензией CC-BY-SA
+        </p>
+        <p>
+          С полным текстом лицензии на русском языке вы можете ознакомиться на официальном сайте Creative Commons - <a class="link link-wrapper" href="https://creativecommons.org/licenses/by/4.0/legalcode.ru" target="_blank" rel="noopener noreferrer">CC-BY-SA.</a>
+        </p>
+      </div>
+      
+    </div>
+  </div>
+</div>-->
+
+<script src="./js/currentVersion.js"></script>
+<script src="./js/popup.js"></script>
+
 </body>
 </html>

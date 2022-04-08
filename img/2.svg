@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="35">
+<rect fill="#09f911" width="15" height="35"/>
+<rect fill="#029d74" width="15" height="35" x="15"/>
+<rect fill="#e35bd8" width="15" height="35" x="30"/>
+<rect fill="#4156c5" width="15" height="35" x="45"/>
+<rect fill="#635688" width="15" height="35" x="60"/>
+<text font-size="11.5" fill="white" font-family="monospace" x="54" y="32">+<tspan font-size="11.5">C0</tspan></text>
+</svg> 
