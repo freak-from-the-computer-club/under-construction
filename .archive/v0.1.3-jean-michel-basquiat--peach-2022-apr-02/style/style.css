@@ -65,7 +65,7 @@ body {
 .footer-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-footer-top__items: center;
   padding: 25px 0 20px 0;
   color: var(--retro-purple);
   font-size: 11px;
@@ -74,13 +74,13 @@ body {
 .footer-top-item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-footer-top__items: center;
   padding: 25px 0 20px 0;
 }
 
 .footer-info {
   display: flex;
-  align-items: center;
+  align-footer-top__items: center;
 }
 
 .footer-info span {
@@ -111,7 +111,7 @@ body {
   color: var(--retro-purple);
 }
 
-.silk-font {
+.font-silkscreen {
   font-family: 'silkscreennormal';
 }
 

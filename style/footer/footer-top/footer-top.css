@@ -1,0 +1,219 @@
+.footer-top {
+  padding: 25px 0 20px 0;
+  color: var(--retro-purple);
+  font-size: 11px;
+  background: #ff99cc;
+  display: grid;
+  grid-column-gap: 4em;
+  grid-template-rows: auto;
+  grid-template-columns: 80px 1fr 1fr auto;
+  grid-template-areas:
+    "logo git  feat  switch"
+    "logo md   about switch"
+    "logo pgp  email switch"
+    "logo date date  copy"; 
+}
+
+.footer-top a {
+  color: var(--retro-purple);
+}
+
+.footer-top__logo {
+  object-fit: contain;
+  width: 80px;
+  height: 105px;
+}
+
+.footer-top__items {
+  display: flex;
+  flex-direction:  column;
+  justify-content:  space-between;
+  align-items:flex-start;
+}
+
+.footer-top__info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.footer-top__copy {
+  align-items: flex-end;
+}
+
+.footer-top__items {
+  display: grid;
+}
+
+.footer-top__items_logo {
+  grid-area: logo;
+}
+
+.footer-top__items_git {
+  grid-area: git;
+}
+
+.footer-top__items_email {
+  grid-area: email;
+}
+
+.footer-top__items_feat {
+  grid-area: feat;
+}
+
+.footer-top__items_about {
+  grid-area: about;
+}
+.footer-top__items_switch {
+  grid-area: switch;
+}
+
+.footer-top__items_gpg {
+  grid-area: pgp;
+}
+
+.footer-top__items_date-create {
+  letter-spacing: 4px;
+  grid-area: date;
+}
+
+.footer-top__items_copy {
+  grid-area: copy;
+}
+
+.footer-top__items_mastodon {
+  grid-area: md;
+}
+
+@media screen and (max-width: 710px) {
+  .footer-top {
+    min-height: 120px;
+    font-size: 9px;
+    grid-template-areas:
+    "logo git  feat  switch"
+    "logo md   about switch"
+    "logo pgp  email switch"
+    "date date date  copy"; 
+  }
+
+  .footer-top__logo {
+    object-fit: cover;
+    width: 60px;
+    height: 80px;
+  }
+
+  .font-16px {
+    font-size: 14px;
+  }
+
+  .footer-top__items_date-create p {
+    letter-spacing: 6px;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .footer-top {
+    min-height: 120px;
+    font-size: 9px;
+    grid-column-gap: 2em;
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-areas:
+    "git  feat  switch"
+    "md   about switch"
+    "pgp  email switch"
+    "date date  copy"; 
+  }
+
+  .footer-top__items_logo {
+    display: none;
+  }
+
+  .footer-top__logo {
+    object-fit: cover;
+    width: 60px;
+    height: 80px;
+  }
+
+  .font-16px {
+    font-size: 11px;
+  }
+
+  .font-18px {
+    font-size: 16px;
+  }
+
+  .footer-top__items_date-create p {
+    letter-spacing: 4px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .footer-top {
+    min-height: 120px;
+    font-size: 9px;
+    grid-column-gap: 2em;
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-areas:
+    "git  feat  switch"
+    "md   about switch"
+    "pgp  email switch"
+    "date date  copy"; 
+  }
+
+  .footer-top__items_logo {
+    display: none;
+  }
+
+  .footer-top__logo {
+    object-fit: cover;
+    width: 60px;
+    height: 80px;
+  }
+
+  .font-16px {
+    font-size: 11px;
+  }
+
+  .font-18px {
+    font-size: 14px;
+  }
+
+  .footer-top__items_date-create p {
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .footer-top {
+    min-height: 120px;
+    font-size: 12px;
+    grid-row-gap: 2em;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+      "feat feat"
+      "about about"
+      "email email"
+      "git git"
+      "md md"
+      "pgp pgp"
+      "switch switch"
+      "date copy";
+  }
+
+  .font-16px {
+    font-size: 14px;
+  }
+
+  .font-18px {
+    font-size: 16px;
+  }
+
+  .footer-top__items_date-create {
+    font-size: 8px;
+  }
+
+  .footer-top__items_date-create p {
+    letter-spacing: 1px;
+  }
+
+}

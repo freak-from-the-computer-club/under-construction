@@ -1,0 +1,35 @@
+@import url(./root/root.css);
+
+@import url(./footer/footer-top/footer-top.css);
+@import url(./footer/footer-bottom/footer-bottom.css);
+
+@import url(./popup/popup.css);
+
+.current-version {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.hello-world {
+  display: grid;
+  text-align: center;
+}
+
+.hello-world img {
+  display: block;
+  margin: auto;
+}
+
+.hello-world p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ascii-alien {
+  display: flex;
+  justify-content: center;
+  margin: 0 245px 0 0;
+  letter-spacing: normal;
+  font-size: 1.3em;
+}
