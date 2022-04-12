@@ -27,6 +27,7 @@ body {
   font-size: 11px;
   letter-spacing: 0.1em;
   color: var(--cosmos-gray);
+  cursor: default;
 }
 
 /*.block-border {
@@ -39,11 +40,11 @@ body {
   padding: 0 15px;
 }
 
-/*.link {
-  cursor: pointer;
+.link {
+  cursor: url('../../img/alien-cursor-link.png') ,pointer;
   color: var(--retro-purple);
   border-bottom: 1px dashed var(--retro-purple);
-}*/
+}
 
 /*.link:hover {
   background-color: var(--retro-cyan);
@@ -66,4 +67,9 @@ body {
 
 .font-18px {
   font-size: 18px;
+}
+
+.caps {
+  text-transform: uppercase;
+  line-height: 2.3;
 }
