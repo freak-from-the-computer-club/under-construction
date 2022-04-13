@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'silkscreennormal';
+  src: url('slkscr-webfont.woff') format('woff'),
+    url('slkscr.ttf') format('truetype');
+}
+

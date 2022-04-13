@@ -1,15 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./img/octo-alien-purple.gif" type="image/x-icon" />
-  <link rel="stylesheet" href="./font/silkscreen/stylesheet.css">
-  <link rel="stylesheet" href="./font/freeMono/style.css">
-  <link rel="stylesheet" href="./font/style.css">
-  <link rel="stylesheet" href="./style/normalize.css">
-  <link rel="stylesheet" href="./style/index.css">
   <title>ff99cc</title>
 </head>
 <body>
@@ -22,12 +15,12 @@
   <section>
     <div class="wrapper">
       <div class="hello-world">
-        <img src="./img/helloworld.gif" alt="hello-world">
-        <img class="welcome" src="./img/welcome.gif" alt="">
+        <img src="<%=require('./images/helloworld.gif')%>" alt="hello-world">
+        <img class="welcome" src="<%=require('./images/welcome.gif')%>" alt="">
         <p>This site</p>
-        <img class="web_under_construction" src="./img/web_under_construction.png" alt="">
+        <img class="web_under_construction" src="<%=require('./images/web_under_construction.png')%>" alt="">
       </div>
-      
+
       <pre class="ascii-alien">
         .     .       .  .   . .   .   . .    +  .
         .     .  :     .    .. :. .___---------___.
@@ -57,15 +50,15 @@
       </pre>
     </div>
   </section>
- 
+
   <footer class="wrapper">
     <div class="footer-top">
       <div class="footer-top__items footer-top__items_logo">
-        <img class="footer-top__logo" src="./img/fftcc-terminal.gif" alt="fftcc-logo">
+        <img class="footer-top__logo" src="<%=require('./images/fftcc-terminal.gif')%>" alt="fftcc-logo">
       </div>
-    
+
       <div class="footer-top__items footer-top__items_switch">
-        <img class="footer-top__footer-top__items" src="./img/Sprite-000.svg" alt="season switch">
+        <img class="footer-top__footer-top__items" src="<%=require('./images/Sprite-0001.svg')%>" alt="season switch">
       </div>
 
       <div class="footer-top__info footer-top__items footer-top__items_git">
@@ -103,7 +96,7 @@
           mastadon
         </a>
       </div>
-    
+
       <div class="footer-top__info footer-top__copy footer-top__items footer-top__items_date-create">
         <p>Сайт работает с 1 апреля 2022</p>
       </div>
@@ -117,13 +110,13 @@
     <div class="footer-bottom">
       <a class="footer-bottom__color-link footer-bottom__policy-privacy" href="#">Политика конфиденциальности</a>
       <a class="footer-bottom__color-link footer-bottom__license" href="#popup-license">Лицензия и Авторские права</a>
-      <a class="footer-bottom__color-link footer-bottom__image-license" href="#popup-license"><img src="./img/by-sa.svg"></a>
+      <a class="footer-bottom__color-link footer-bottom__image-license" href="#popup-license"><img src="<%=require('./images/by-sa.svg')%>"></a>
       <p class="footer-bottom__version" id="current-version" class="current-version"></p>
     </div>
 
   </footer>
 
-  
+
 
 <div id="popup-pgp" class="popup">
   <div class="popup__body">
@@ -200,14 +193,10 @@ nYhM0KKWmSEO
           С полным текстом лицензии на русском языке вы можете ознакомиться на официальном сайте Creative Commons - <a class="link link-wrapper" href="https://creativecommons.org/licenses/by/4.0/legalcode.ru" target="_blank" rel="noopener noreferrer">CC-BY-SA.</a>
         </p>
       </div>
-      
+
     </div>
   </div>
 </div>-->
-
-<script src="./js/currentVersion.js"></script>
-<script src="./js/popup.js"></script>
-<script src="./js/cursor.js"></script>
 
 </body>
 </html>

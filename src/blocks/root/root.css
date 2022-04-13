@@ -41,7 +41,6 @@ body {
 }
 
 .link {
-  cursor: url('../../img/alien-cursor-link.png') ,pointer;
   color: var(--retro-purple);
   border-bottom: 1px dashed var(--retro-purple);
 }

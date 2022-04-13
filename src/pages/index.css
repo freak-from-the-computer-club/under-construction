@@ -1,9 +1,14 @@
-@import url(./root/root.css);
+@import url(../vendors/normalize.css);
+@import url(../vendors/fonts/pixelgeorgia.css);
+@import url(../vendors/fonts/slkscr.css);
+@import url(../vendors/fonts/FreeMono.css);
 
-@import url(./footer/footer-top/footer-top.css);
-@import url(./footer/footer-bottom/footer-bottom.css);
+@import url(../blocks/root/root.css);
 
-@import url(./popup/popup.css);
+@import url(../blocks/footer/footer-top/footer-top.css);
+@import url(../blocks/footer/footer-bottom/footer-bottom.css);
+
+@import url(../blocks/popup/popup.css);
 
 .current-version {
   display: flex;
