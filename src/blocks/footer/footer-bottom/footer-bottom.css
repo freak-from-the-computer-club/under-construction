@@ -52,4 +52,9 @@
       "ver ver";
     justify-content: space-between;
   }
+
+  .footer-bottom__image-license {
+    display: flex;
+    flex-direction: column;
+  }
 }
