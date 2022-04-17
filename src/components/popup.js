@@ -1,87 +1,60 @@
-const popupLinks = document.querySelectorAll('.popup-link');
-const body = document.querySelector('body');
-const lockPadding = document.querySelectorAll('.lock-padding');
+const popups = document.querySelectorAll('.popup');
+const popupContainers = document.querySelectorAll('.popup__container');
+const closeButtons = document.querySelectorAll('.popup__close');
 
-let unlock = true;
+const liceseLink = document.querySelector('.popup__license');
+const liceseBadges = document.querySelector('.popup__license_badges');
+const popupLicense = document.querySelector('#popupLicense');
 
-const timeout = 400;
+const PGPLink = document.querySelector('.popup__PGP');
+const popupPGP = document.querySelector('#popupPGP');
 
-if (popupLinks.length > 0) {
-  for (let i = 0; i < popupLinks.length; i++) {
-    const popupLinks = popupLinks[i];
-    popupLinks.addEventListener('click', function(e) {
-      const popupName = popupLinks.getAttribute('href').replace('#', '');
-      const currentPopup = document.getElementById(popupName);
-      popupOpen(currentPopup);
-      e.preventDefault();
-    });
-  }
+function openedPopups(popup) {
+  popup.classList.add('popup_opened');
+	document.addEventListener('keydown', onKeydown);
 }
 
-const popupCloseIcon = document.querySelectorAll('.close-popup');
-if (popupCloseIcon.length > 0) {
-  for (let i = 0; i < popupCloseIcon.length; i++) {
-    const el = popupCloseIcon[i];
-    el.addEventListener('click', function(e) {
-      popupClose(el.closest('.popup'));
-      e.preventDefault();
-    });
-  }
+function closedPopups(popup) {
+  popup.classList.remove('popup_opened');
+	document.removeEventListener('keydown', onKeydown);
 }
 
-function popupOpen(currentPopup) {
-  if (currentPopup && unlock) {
-    const popupActive = document.querySelector('.popup.open');
-    if (popupActive) {
-      popupClose(popupActive, false);
-    } else {
-      bodyLock();
+function onClickLiceseLink(){
+	openedPopups(popupLicense);
+}
+
+function onClickPGPLink(){
+	openedPopups(popupPGP);
+}
+
+function onClickCloseButton(e) {
+  closedPopups(e.target.closest('.popup'));
+}
+
+//закрытие попапов по клавише escape
+function onKeydown(e) {
+  if (e.key === 'Escape') {
+    const openedPopup = document.querySelector('.popup_opened');
+    if (openedPopup) {
+      closedPopups(openedPopup);
     }
-    currentPopup.classList.add('open');
-    currentPopup.addEventListener('click', function (e) {
-      if (!e.target.closest('.popup__content')) {
-        popupClose(e.target.closest('.popup'));
-      }
-    });
   }
+};
+
+function onClickPopupContainer(e) {
+  e.stopPropagation();
 }
 
-function popupClose(popupActive, doUnlock = true) {
-  if (unlock) {
-    popupActive.classList.remove('open');
-    if (doUnlock) {
-      bodyUnLock();
-    }
-    currentPopup.classList.add('open');
-    currentPopup.addEventListener('click', function (e) {
-      if (!e.target.closest('.popup__content')) {
-        popupClose(e.target.closest('.popup'));
-      }
-    });
-  }
-}
+//закрытие попапа кликом по оверлею
+popups.forEach( function(popup) {
+  popup.addEventListener('click', onClickCloseButton)
+});
 
-function bodyLock() {
-  const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+popupContainers.forEach((popupContainer) => {
+  popupContainer.addEventListener('click', onClickPopupContainer);
+});
 
-  for (let i =0; i < lockPadding.length; i++) {
-    const el = lockPadding[i];
-    el.style.paddingRight = lockPaddingValue;
-  }
-  body.style.paddingRight = lockPaddingValue;
-  body.classList.add('lock');
-
-  unlock = false;
-  setTimeout(function () {
-    unlock = true;
-  }, timeout);
-}
-
-function bodyUnLock() {
-  setTimeout(function () {
-    for (let i = 0; i < lockPadding.length; i++) {
-      const el = lockPadding[i];
-      el.style.paddingRight = '0px';
-    }
-  })
-}
+liceseLink.addEventListener('click', onClickLiceseLink);
+liceseBadges.addEventListener('click', onClickLiceseLink);
+PGPLink.addEventListener('click', onClickPGPLink);
+closeButtons.forEach(button => button.addEventListener('click', onClickCloseButton));

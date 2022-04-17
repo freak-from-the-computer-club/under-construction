@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+	target: 'web',
   entry: { main: './src/pages/index.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -21,6 +22,8 @@ module.exports = {
         name: 'vivaldi-stable',
       },
     },
+
+		hot: true,
   },
 	module: {
     rules: [{

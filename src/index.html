@@ -86,7 +86,7 @@
       </div>
 
       <div class="footer-top__info footer-top__items footer-top__items_gpg">
-        <a class="footer-top__color-link font-silkscreen font-16px" href="#" target="_blank">
+        <a class="footer-top__color-link font-silkscreen font-16px popup__PGP">
           PGP<br>0x0992BBCB
         </a>
       </div>
@@ -108,55 +108,40 @@
     </div>
 
     <div class="footer-bottom">
+
       <a class="footer-bottom__color-link footer-bottom__policy-privacy" href="#">Политика конфиденциальности</a>
-      <a class="footer-bottom__color-link footer-bottom__license" href="#popup-license">Лицензия и Авторские права</a>
-      <a class="footer-bottom__color-link footer-bottom__image-license" href="#popup-license"><img src="<%=require('./images/cc.svg')%>"><img src="<%=require('./images/mit1.svg')%>"></a>
+
+      <a class="footer-bottom__color-link footer-bottom__license popup__license" >Лицензия и Авторские права</a>
+
+      <a class="footer-bottom__color-link footer-bottom__image-license popup__license_badges" href="#"><img src="<%=require('./images/cc.svg')%>"><img src="<%=require('./images/mit1.svg')%>"></a>
+
       <p class="footer-bottom__version" id="current-version" class="current-version"></p>
+
     </div>
 
   </footer>
 
 
 
-<div id="popup-pgp" class="popup">
-  <div class="popup__body">
-    <div class="popup__content">
+<div id="popupPGP" class="popup">
+  <div class="popup__container">
       <a href="#" class="popup__close close-popup">X</a>
-      <pre class="popup__text">
+      <p class="popup__text">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
-
-mDMEYYpDchYJKwYBBAHaRw8BAQdAljQcD2kQUTfgoHylLfOMUKaVKrkWbQRowcPM
-sk2/sw+0NWZmdGNjIChmcmVhayBmcm9tIHRoZSBjb21wdXRlciBjbHViKSA8ZWVl
-QGZmOTljYy5hcnQ+iJAEExYKADgWIQTNLAhlFrB7cEA0JCbJRryTCZK7ywUCYghR
-KgIbAQULCQgHAwUVCgkICwUWAgMBAAIeAQIXgAAKCRDJRryTCZK7y0vZAQCJtNDp
-70H2oqAWRL2Qvw0TWkwv4E5fc8X795IiV7FLnwEArDm9OjuofV0VWDR1X3zggU12
-3QmxU9YZci+Mc5OSUAe4MwRhipzXFgkrBgEEAdpHDwEBB0B+hNEsRE5jz7RjN9Ev
-G7TEueRdfNhtHlcvTI0Xq87gVYj1BBgWCgAmAhsCFiEEzSwIZRawe3BANCQmyUa8
-kwmSu8sFAmGOmOMFCQDxSgwAgXYgBBkWCAAdFiEEVrnflA4vTzcF8jRDyEv2FNwa
-LfkFAmGKnNcACgkQyEv2FNwaLfmFzgEArIeYTBGscqwouzLm9dThWEjJfdWqhdHB
-/q7oUOcFNYsBAIJYl6c1fvahR93YD1ETUIsjE+oVfBRQtjEqoPTIoZoBCRDJRryT
-CZK7y1mFAQC79mZCeMoeji37nlsuUt+U5l+mkA4fHLWDuSBuwGcCaQEA6b3/aTn7
-5gdjby8/PfEKN45/MaWcyEUUvSN/cfn7iQG4OARhip05EgorBgEEAZdVAQUBAQdA
-Y0UdcxUNpoP41CgJDoEgqMHrIDDEgce1jrrVyscryR8DAQgHiH4EGBYKACYCGwwW
-IQTNLAhlFrB7cEA0JCbJRryTCZK7ywUCYY6Y4wUJAPFJqgAKCRDJRryTCZK7yykI
-AP9PDt3+kCTb9T8P6pmtiES2Tq2YVsWtdk1QVg0xnRVDQgEAw79kNdQPSSvRXmxL
-6qMkVDLxWKDlr1mD9fI0cfLyKAy4MwRhip2YFgkrBgEEAdpHDwEBB0A/9MCOxfid
-x0Hb6THBiYduAft0CE8t5PBLpHFt+xQJTYh+BBgWCgAmAhsgFiEEzSwIZRawe3BA
-NCQmyUa8kwmSu8sFAmGOmOMFCQDxSUsACgkQyUa8kwmSu8uoewEAovwrFp/1S5mp
-CthEucuK8Er3/RKPbSBOmtzTtJtxzagBAKFz1l8mhHcpl2ZSuoqPLNEc6NUUeY6m
-nYhM0KKWmSEO
-=ZnwH
+<br>
+mDMEYYpDchYJKwYBBAHaRw8BAQdAljQcD2kQUTfgoHylLfOMUKaVKrkWbQRowcPMsk2/sw+0NWZmdGNjIChmcmVhayBmcm9tIHRoZSBjb21wdXRlciBjbHViKSA8ZWVlQGZmOTljYy5hcnQ+iJAEExYKADgWIQTNLAhlFrB7cEA0JCbJRryTCZK7ywUCYghRKgIbAQULCQgHAwUVCgkICwUWAgMBAAIeAQIXgAAKCRDJRryTCZK7y0vZAQCJtNDp70H2oqAWRL2Qvw0TWkwv4E5fc8X795IiV7FLnwEArDm9OjuofV0VWDR1X3zggU12
+3QmxU9YZci+Mc5OSUAe4MwRhipzXFgkrBgEEAdpHDwEBB0B<br>+hNEsRE5jz7RjN9EvG7TEueRdfNhtHlcvTI0Xq87gVYj1BBgWCgAmAhsCFiEEzSwIZRawe3BANCQmyUa8kwmSu8sFAmGOmOMFCQDxSgwAgXYgBBkWCAAdFiEEVrnflA4vTzcF8jRDy<br>Ev2FNwaLfkFAmGKnNcACgkQyEv2FNwaLfmFzgEArIeYTBGscqwouzLm9dThWEjJfdWqhdHB/q7oUOcFNYsBAIJYl6c1fvahR93YD1ETUIsjE+oVfBRQtjEqoPTIoZoBCRDJRryTCZK7y1mFAQC79mZCeMoeji37nlsuUt+U5l+mkA4fHLWDuSBuwGcCaQEA6b3/aTn7
+5gdjby8/PfEKN45/MaWcyEUUvSN/cfn7iQG4OARhip05EgorBgEEAZdVAQUBAQdAY0UdcxUNpoP4<br>1CgJDoEgqMHrIDDEgce1jrrVyscryR8DAQgHiH4EGBYKACYCGwwWIQTNLAhlFrB7cEA0JCbJRryTCZK7ywUCYY6Y4wUJAPFJqgAKCRDJRryTCZK7yykIAP9PDt3+kCTb9T8P6pmtiES2Tq2YVsWtdk1QVg0xnRVDQgEAw79kNdQPSSvRXmxL6qMkVDLxWKDlr1mD9fI0cfLyKAy4MwRhip2YFgkrBgEEAdpHDwEBB0A/9MCOxfidx0Hb6THBiYduAft0CE8t5PBLpHFt+xQJTYh+BBgWCgAmAhsgFiEEzSwIZRawe3BANCQmyUa8kwmSu8sFAmGOmOMFCQDxSUsACgkQyUa8kwmSu8uoewEAovwrFp/1S5mpCthEucuK8Er3/RKPbSBOmtzTtJtxzagBAKFz1l8mhHcpl2ZSuoqPLNEc6NUUeY6mnYhM0KKWmSEO=ZnwH
+<br>
 -----END PGP PUBLIC KEY BLOCK-----
-      </pre>
+      </p>
     </div>
-  </div>
 </div>
 
-<!--<div id="popup-license" class="popup popup__cc">
-  <a href="#" class="popup__area"></a>
-  <div class="popup__body">
-    <div class="popup__content">
-      <a href="#" class="popup__close">X</a>
+<div class="popup" id="popupLicense">
+  <div class="popup__container">
+    <!--<button type="button" class="popup__close">&#10006</button>-->
+
       <div class="popup__text">
         <p>
           В текущей версии пректа <span id="current-version" class="current-version"></span> Исходный код распростаняется по лицензией MIT, а контент сайта под лицензией CC-BY-SA.
@@ -194,9 +179,11 @@ nYhM0KKWmSEO
         </p>
       </div>
 
-    </div>
+      <!--<div class="popup__close">X</div>-->
+      <div class="popup__close">&#10006</div>
+
   </div>
-</div>-->
+</div>
 
 </body>
 </html>
